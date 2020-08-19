@@ -24,16 +24,18 @@
         :key="key"
       >
         <textarea
-          class="form-control"
+          class="form-control disabled"
           type="text"
+          readonly
           :value="formatar(key)"
           :id="'texto' + key"
         />
+
         <button
           :data-clipboard-target="'#texto' + key"
           class="btn btnCopiar btn-primary rounded-pill btn-sm ml-3"
         >
-          COPIAR
+          <i class="fa fa-copy"></i>
         </button>
       </div>
     </div>
@@ -49,7 +51,7 @@ export default {
   name: "Gerador",
   data: function() {
     return {
-      mensagem: "",
+      mensagem: "Pnmeumoultramicroscopico",
       alfabetos: [
         {
           a: "A",

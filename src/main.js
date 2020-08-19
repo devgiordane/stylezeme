@@ -2,6 +2,7 @@ import Vue from "vue";
 import App from "./App.vue";
 import "./registerServiceWorker";
 import router from "./router";
+import "@fortawesome/fontawesome-free/js/all";
 
 Vue.config.productionTip = false;
 
