@@ -19,19 +19,19 @@
         </div>
       </div>
       <div
-        class="col-12 d-flex align-items-baseline"
+        class="col-12 d-flex align-items-center mb-3"
         v-for="(alfabeto, key) in alfabetos"
         :key="key"
       >
         <textarea
-          class="form-control mb-3"
+          class="form-control"
           type="text"
           :value="formatar(key)"
           :id="'texto' + key"
         />
         <button
           :data-clipboard-target="'#texto' + key"
-          class="btn btnCopiar btn-primary btn-sm ml-3"
+          class="btn btnCopiar btn-primary rounded-pill btn-sm ml-3"
         >
           COPIAR
         </button>
